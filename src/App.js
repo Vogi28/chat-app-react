@@ -1,7 +1,7 @@
 import React from 'react';
 import Contact from './components/Contact';
 
-const isConnected = true;
+let isConnected = true;
 
 function App() {
   return (
@@ -15,13 +15,13 @@ function App() {
       <Contact 
       image="https://i.pinimg.com/originals/5b/ca/cc/5bcacc2e312b5e929c8092cbfcb72858.jpg" 
       name="CutCaptain" 
-      status={isConnected} 
+      status={isConnected = false} 
       statusText={isConnected ? 'online' : 'offline'} 
       />
       <Contact 
       image="https://1.bp.blogspot.com/-Xj8pykSgDvU/V7c6N1paXtI/AAAAAAAAMu0/qftH8hn7OZUa4wMfjZiiFOjyV0MdgDv0ACLcB/s1600/chibi%2Bhulk.jpg" 
       name="CutHulk" 
-      status={isConnected} 
+      status={isConnected = true} 
       statusText={isConnected ? 'online' : 'offline'} 
       />
     </div>
